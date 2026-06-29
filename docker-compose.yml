@@ -1,0 +1,117 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: pet-atlas-db
+    user: "995:986" # db-runner
+    environment:
+      MYSQL_ROOT_PASSWORD: pet_atlas_db_root_sec_pass_2026
+      MYSQL_DATABASE: pet_atlas
+    volumes:
+      - /srv/containers/databases:/var/lib/mysql
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql:ro
+    tmpfs:
+      - /var/run/mysqld
+      - /tmp
+    restart: always
+    networks:
+      - pet-atlas-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: pet-atlas-backend
+    user: "999:988" # nestjs-runner
+    environment:
+      PORT: 3000
+      DATABASE_HOST: db
+      DATABASE_PORT: 3306
+      DATABASE_USER: root
+      DATABASE_PASSWORD: pet_atlas_db_root_sec_pass_2026
+      DATABASE_NAME: pet_atlas
+      WP_JWT_SECRET: "eo|]5=P@ovK34>_|pS8CdN]Dd]IX!4z{w_h9mmeu)S_e7)UB3d#5@?[<]t%E)iqp"
+      WP_BASE_URL: https://pet-atlas.com
+      WP_API_PATH: /wp-json/wp/v2
+      WC_CONSUMER_KEY: ck_987fabbe323ac027336011da4085666d2337f84a
+      WC_CONSUMER_SECRET: cs_952edb243f186f86e03d828e63245d5a3dff72c6
+      WC_PRODUCT_ID: 1787
+    volumes:
+      - /srv/containers/nestjs-api:/app/uploads
+    ports:
+      - "3000:3000" # Expose for testing/direct access
+    depends_on:
+      - db
+    restart: always
+    networks:
+      - pet-atlas-network
+
+  dashboard:
+    build:
+      context: ./dashboard
+      dockerfile: Dockerfile
+    container_name: pet-atlas-admin-dashboard
+    user: "994:985" # dashboard-runner
+    volumes:
+      - /srv/containers/admin-dashboard:/app/persistent
+    ports:
+      - "8080:8080" # Exposed internally, Caddy will proxy
+    restart: always
+    networks:
+      - pet-atlas-network
+
+  clinic-dashboard:
+    build:
+      context: ./clinic-dashboard
+      dockerfile: Dockerfile
+    container_name: pet-atlas-clinic-dashboard
+    user: "993:984" # clinic-runner
+    volumes:
+      - /srv/containers/clinic-dashboard:/app/persistent
+    ports:
+      - "8081:8080" # Direct port mapping for testing
+    restart: always
+    networks:
+      - pet-atlas-network
+
+  consultant-dashboard:
+    build:
+      context: ./consultant-dashboard
+      dockerfile: Dockerfile
+    container_name: pet-atlas-consultant-dashboard
+    user: "990:983" # consultant-runner
+    volumes:
+      - /srv/containers/consultant-dashboard:/app/persistent
+    ports:
+      - "8082:8080" # Direct port mapping for testing
+    restart: always
+    networks:
+      - pet-atlas-network
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: pet-atlas-caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - backend
+      - dashboard
+      - clinic-dashboard
+      - consultant-dashboard
+    restart: always
+    networks:
+      - pet-atlas-network
+
+volumes:
+  caddy_data:
+  caddy_config:
+
+networks:
+  pet-atlas-network:
+    driver: bridge

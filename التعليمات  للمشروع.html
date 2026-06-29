@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00b0f0",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0f1e23",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .active-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden pb-20">
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-4 pt-4 pb-2">
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-2">
+<div class="bg-primary p-1.5 rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-2xl">pets</span>
+</div>
+<h1 class="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Pet-Atlas</h1>
+</div>
+<button class="bg-primary/10 dark:bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                    EN/AR
+                </button>
+</div>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+
+</header>
+<!-- Hero Section -->
+<section class="px-4 py-6">
+<div class="relative overflow-hidden rounded-2xl bg-primary px-6 py-8 text-white shadow-lg">
+<div class="relative z-10 max-w-[70%]">
+<h2 class="text-2xl font-bold leading-tight mb-2">Everything your pet needs, in one place.</h2>
+<p class="text-white/80 text-sm">Find trusted professionals near you.</p>
+</div>
+<div class="absolute top-0 right-0 w-32 h-32 -mr-8 -mt-4 opacity-20">
+<span class="material-symbols-outlined text-[120px]">pets</span>
+</div>
+</div>
+</section>
+<!-- Quick Action: Home Visit -->
+<section class="px-4 mb-8">
+<button class="w-full bg-white dark:bg-slate-800 border-2 border-primary/20 hover:border-primary flex items-center justify-between p-4 rounded-xl transition-all">
+<div class="flex items-center gap-4">
+<div class="bg-primary text-white p-3 rounded-full">
+<span class="material-symbols-outlined">home_health</span>
+</div>
+<div class="text-left">
+<h4 class="font-bold text-slate-900 dark:text-slate-100">Need a Home Visit?</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Professional vets right at your door</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary">arrow_forward_ios</span>
+</button>
+</section>
+<!-- Search Bar -->
+<section class="px-4 mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-primary">search</span>
+</div>
+<input class="w-full h-14 pl-12 pr-4 bg-white dark:bg-slate-800 border-none rounded-xl shadow-sm focus:ring-2 focus:ring-primary/50 text-base" placeholder="Search for clinics, vets, or food" type="text"/>
+<div class="absolute inset-y-0 right-4 flex items-center">
+<button class="p-1 rounded-lg hover:bg-primary/10">
+<span class="material-symbols-outlined text-slate-400">tune</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Services Grid -->
+<section class="px-4 mb-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-xl font-bold">Our Services</h3>
+<a class="text-primary text-sm font-semibold" href="#">See All</a>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm flex flex-col items-center text-center gap-2 border border-slate-100 dark:border-slate-700">
+<div class="size-12 rounded-full bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-500 text-2xl">medical_services</span>
+</div>
+<span class="font-bold text-sm">Clinics</span>
+</div>
+<div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm flex flex-col items-center text-center gap-2 border border-slate-100 dark:border-slate-700">
+<div class="size-12 rounded-full bg-green-50 dark:bg-green-900/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-500 text-2xl">stethoscope</span>
+</div>
+<span class="font-bold text-sm">Vets</span>
+</div>
+<div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm flex flex-col items-center text-center gap-2 border border-slate-100 dark:border-slate-700">
+<div class="size-12 rounded-full bg-orange-50 dark:bg-orange-900/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-orange-500 text-2xl">content_cut</span>
+</div>
+<span class="font-bold text-sm">Grooming</span>
+</div>
+<div class="p-4 bg-white dark:bg-slate-800 rounded-xl shadow-sm flex flex-col items-center text-center gap-2 border border-slate-100 dark:border-slate-700">
+<div class="size-12 rounded-full bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-purple-500 text-2xl">pets</span>
+</div>
+<span class="font-bold text-sm">Pet Care</span>
+</div>
+</div>
+</section>
+<!-- Blog Preview Section -->
+<section class="px-4 mb-24">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold">Latest from the Blog</h3>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-primary text-white text-[10px] rounded-full font-bold uppercase">Dog</span>
+<span class="px-2 py-1 bg-primary/10 text-primary text-[10px] rounded-full font-bold uppercase">Cat</span>
+</div>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 snap-x no-scrollbar">
+<div class="min-w-[280px] snap-center bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="h-40 bg-slate-200 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Golden Retriever playing in the park" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-RiKSxf-Ua5pyh5ciyO8d3SMOtPWT2L0DPjLuHg-uJEO7tO_A5ICfXdlvf5e_r675SRcSY7Nzrg9L9OLTLKjxTDdR4fDLl6y6tWmf2Jauc31h2jR0QFHkbPS7uKSYjzO31PR53rY7pPnNIf9r70zKR-k1G8qw83yoUmjiECqzoRG3EQaucI7WLXiRQrPQNAw1uAMYCqtYpvXEx5o_-VnsLctFsAzV7_pXJB2L_MlCTkutOMQkchFEYRMwpg9NqZCcNfqpYZPdYfbi"/>
+<div class="absolute top-2 right-2 bg-white/90 px-2 py-0.5 rounded text-[10px] font-bold text-slate-800">DOG</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-sm mb-1 leading-snug">5 Tips for Summer Hydration in Larger Breeds</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Keep your furry friend cool this August...</p>
+</div>
+</div>
+<div class="min-w-[280px] snap-center bg-white dark:bg-slate-800 rounded-xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700">
+<div class="h-40 bg-slate-200 w-full relative">
+<img class="w-full h-full object-cover" data-alt="Exotic chameleon on a green leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaCDwtDkrWvhGTq_B7-s0RVm3S5wG5a9q1k3fixdVDAlIpPnuVc9hVWSGWlR1YHHYrY5sBqVGr61HTBwUMrcpyQY-2qmsUlI3RRHz_bcyTWRNJpY6AI4wt-A9QLYAEsV6cBYurJxxFEaN5hfrvrZ3c62SkQCanRwsGpyqpszpbkqeM4OkEe8n0MXslgeKXLbBT28JHDdOZBHAtZsqFKbGhKT4Rry8fgpOdCN1hTmzVBo69z6IL_TYiRg8w35aDupLoqA-NUZNehcXo"/>
+<div class="absolute top-2 right-2 bg-white/90 px-2 py-0.5 rounded text-[10px] font-bold text-slate-800">EXOTIC</div>
+</div>
+<div class="p-4">
+<h4 class="font-bold text-sm mb-1 leading-snug">Caring for your Reptile during Winter</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400">Essential heating and humidity tips...</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-slate-900/90 backdrop-blur-lg border-t border-slate-200 dark:border-slate-800 px-2 pb-6 pt-3 z-[60]">
+<div class="max-w-md mx-auto flex justify-around items-center">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined active-icon">home</span>
+<span class="text-[10px] font-bold">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-[10px] font-medium">VetChat</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">sell</span>
+<span class="text-[10px] font-medium">Discounts</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">format_list_bulleted</span>
+<span class="text-[10px] font-medium">Lists</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-slate-400 dark:text-slate-500" href="#">
+<span class="material-symbols-outlined">account_circle</span>
+<span class="text-[10px] font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

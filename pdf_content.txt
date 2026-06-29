@@ -1,0 +1,286 @@
+Number of pages: 10
+--- Page 1 ---
+Pet-Atlas Application 
+ 
+- As simple as any pet owner can use it without complications or confusion  
+- IOS/Android 
+- Linked and Synchronized with the website and should reflect any activity 
+automatically 
+- Anyone can use the application but only the subscribers have the access to 
+the community 
+- The community part should look like the WhatsApp – for the sake of 
+customer peace and comfortability. 
+- The subscription part includes ( Vet chat + Offers/Discounts )  
+- The subscription should be set on Auto-renewal ; means that once the 
+customer subscribe first time, the deduction of the cost amount should be 
+automatically deducted from the customer bank account and the customer 
+doesn’t have to renew it by him/her self manually…Exactly like ( Youtube 
+premium subscription ) and once the client cancel the subscription or the 
+process of the payment failed, the access of the community should be 
+removed but still have access to the rest of the items on the application.  
+- The application is dual language ( Arabic and English )  
+- In the Pet-Atlas Community :- 
+- Communication in the community will be through texting, sending voice 
+messages and recording videos only ( No direct calls )  
+- Announcement group for only announcements and members don’t have 
+access to interact or comment. 
+- Community group for all the members and vet account to interact, 
+comment,..etc 
+- Vet Chat Account is the consultant/Vet account where all the members can 
+text, send videos and voice messages directly anytime with no 
+appointments. 
+- The access of Vet Chat Account can be given and opened from multiple 
+different places at the same time. 
+--- Page 2 ---
+- An admin account/Owner have all the access/full control of the app and 
+have the access to monitor and see the chats between the vet account and 
+the members for supervision and quality work. 
+- The admin can see how many vet chat account and timming logged in & 
+Out. 
+- The admin account can create an account and give specific access to some 
+team members like the operation manager, technical team, Editor,..etc but 
+not having the full access as the admin account.  
+- The admin account has the right to remove a specific member from the 
+community or directly add a member without paying or providing a code 
+that offers 0 payment upon subscription. 
+- The Themes, tones, style branding of the application should be the same as 
+the website. 
+- Providing the Source code 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 3 ---
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+- Pet Photo 
+Name,Date of birth,Sex,Breed,Neutred or not 
+ 
+- Client name 
+Date of birth, Sex, Address,City,Country,Mobile 
+number,Email. 
+ 
+- Additional pets to be added as above 
+ 
+- Payment details 
+ 
+- Notes 
+ 
+- Activity log 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 4 ---
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+ 
+- For Non-Subscribers will see :- 
+Chat with our vet team anytime, anywhere, just like texting 
+a friend, just a few clicks. No appointments needed.  
+Pet-Atlas Always Here for you 
+ 
+Subscribe now 
+38 aed instead of 66 
+ 
+- For subscribers will see :- 
+ 
+Pet-Atlas Community 
+Vet Chat Chattings are here 
+Announcement 
+Community 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 5 ---
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+ 
+- For non-subscribers will see :- 
+Chat with our vet team anytime, anywhere, just like texting 
+a friend, just a few clicks. No appointments needed.  
+Pet-Atlas Always Here for you 
+ 
+Subscribe now 
+38 aed instead of 66 
+ 
+- For subscribers will see :- 
+ 
+Lists of discounts available 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 6 ---
+ 
+ 
+ 
+ 
+ 
+ 
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+MAPS 
+_________________________________________________  
+ 
+Clinics Vets Insurance Mobile 
+clinics 
+Groomers Pet 
+Shops 
+Pet 
+Sitters 
+ 
+Events Boarding 
+& Day 
+Care 
+  
+ 
+ 
+- Once clicking on an item > direction to list of 
+clinics,vets,..etc and can be filtered and viewed by 
+region/area, price, high/low rating. 
+ 
+- The maps part is an optional tool for the client once it 
+is pressed on, it should show the below clinic lists for 
+example but on the maps like what is in website ( 
+Trip.com ). 
+ 
+- In case of the list ( Clinics for example ) without 
+clicking on the map so it will be listed as names, logo, 
+stars, address. 
+ 
+ 
+--- Page 7 ---
+ 
+ 
+ 
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+Fixed tempelates once any item added 
+ 
+- Once clicked on a specific clinic > Full profile including 
+Clinic name, logo, description, prices, address, phone 
+numbers, stars, services, equipments, specialization, 
+Photo gallery, reviews and stars. 
+ 
+- Once clicked on a specific vet > Full profile including 
+Vet name, photo, current work, places worked 
+before,  specialization, certification, achievements, 
+reviews and stars. 
+ 
+- Once clicked on a specific Insurance > Full profile 
+including 
+company name, logo, description, address, phone 
+numbers, stars, services, reviews and stars. 
+ 
+- Once clicked on a specific mobile clinic > Full profile 
+including 
+Clinic name, logo, description, prices, coverage areas, 
+phone numbers, stars, services, equipments, 
+specialization, Photo gallery, reviews and stars. 
+ 
+- Once clicked on a groomer > Full profile including 
+Groomer shop name, logo, description, prices, 
+address, phone numbers, stars, services, Photo 
+gallery, reviews and stars. 
+ 
+ 
+ 
+--- Page 8 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+- Once clicked on a specific pet sitter > Full profile 
+including 
+sitter name, photo, places worked before, services, 
+photos, phone number, prices, reviews and stars. 
+ 
+- Once clicked on a specific boarding or a day care > 
+Full profile including 
+name, logo, phone number, services,  cost, , 
+achievements, photo gallery, reviews and stars. 
+ 
+- Once clicked on an event > Full profile including 
+name, logo, Date, phone number, description,  
+cost/ticket, photo gallery, reviews and stars. 
+ 
+- Once clicked on a pet shop > Full profile including 
+name, logo, phone number, address, products and 
+prices, Website, photo gallery, reviews and stars. 
+--- Page 9 ---
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+ 
+Home visit button/chat to ask for a home visit and our team 
+will get the information and provide the vet,cost,..etc  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+--- Page 10 ---
+Profile VetChat Discounts Lists Home 
+Visit 
+Blogs 
+ 
+Dog 
+Cat 
+Exotic 
+ 
+Blogs sync with website 
+Search bar 
+ 
+Readers can select the cat button to see the blogs about 
+cats. 
+If readers don’t select a dog/cat/exotic, so list of blogs are 
+viewed normally but blogs will be labeled ( cat/dog/exotic ) 
+based on their animal relation. 
+ 

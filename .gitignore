@@ -1,0 +1,60 @@
+# Flutter/Dart
+.dart_tool/
+.idea/
+.packages
+.pub-cache/
+.pub/
+build/
+android/app/key.properties
+ios/Runner/GeneratedPluginRegistrant.h
+ios/Runner/GeneratedPluginRegistrant.m
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/App.podspec
+ios/Flutter/App.framework.dSYM
+ios/.http
+!/ios/Flutter/AppFrameworkInfo.plist
+!/ios/Runner/AppDelegate.m
+!/ios/Runner/AppDelegate.h
+!/ios/Runner/main.m
+!/ios/Runner/Info.plist
+
+# Backend/Node
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Web
+.web/
+
+# Android
+android/.gradle/
+android/local.properties
+android/app/key.properties
+*.keystore
+
+# Database
+*.sql.temp
+*.sqlite
+
+# General
+*.pdb
+*.obj
+*.o
+*.lib
+*.dll
+*.class
+*.exe
+*.so
+*.dylib
+.DS_Store

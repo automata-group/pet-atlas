@@ -1,0 +1,40 @@
+# Caddyfile configuration for Pet-Atlas Services
+{
+    # Global options
+    email info@pet-atlas.com
+}
+
+# Admin Dashboard & Fallback IP on Port 80
+admin.pet-atlas.com, 91.99.108.165 {
+    handle_path /api/* {
+        reverse_proxy backend:3000
+    }
+    handle {
+        reverse_proxy dashboard:8080
+    }
+}
+
+# Clinic/Merchant Dashboard
+clinic.pet-atlas.com {
+    handle_path /api/* {
+        reverse_proxy backend:3000
+    }
+    handle {
+        reverse_proxy clinic-dashboard:8080
+    }
+}
+
+# Consultant Dashboard
+consultant.pet-atlas.com {
+    handle_path /api/* {
+        reverse_proxy backend:3000
+    }
+    handle {
+        reverse_proxy consultant-dashboard:8080
+    }
+}
+
+# NestJS Backend API & WebSockets
+api.pet-atlas.com {
+    reverse_proxy backend:3000
+}
